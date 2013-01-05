@@ -1,12 +1,11 @@
-class Event
+class Event < ActiveRecord::Base
+  attr_accessible :number
+
+  has_many :presentations
 
   class << self
-    def create
-      Event.new
+    def home
+      order(:number).reverse_order
     end
-  end
-
-  def persited?
-    true
   end
 end
