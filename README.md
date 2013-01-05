@@ -7,6 +7,11 @@ Wtm Summary
 
 [Web touch meeting](http://www.webtouchmeeting.com) のまとめサイトを勝手に作ってみよう。という流れです。
 
+## 概要
+
+- Rails Apps Composer を使ってプロジェクトの作成
+- Cucumber を使用してインテグレーションテストから記述する
+
 ## 謝辞
 
 このアプリケーションは Rails Apps Composer で生成しました。
