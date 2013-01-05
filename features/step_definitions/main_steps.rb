@@ -12,8 +12,21 @@
   end
 end
 
+前提 /^イベントのデータがある$/ do
+  step '第52回の勉強会の情報が登録されている'
+  step '第51回の勉強会の情報が登録されている'
+end
+
 もし /^"(.*?)"に訪問する$/ do |path|
   visit(path)
+end
+
+もし /^"(.*?)"をクリックする$/ do |name|
+  click_link name
+end
+
+ならば /^過去のイベント情報が表示される$/ do
+  pending # express the regexp above with the code you wish you had
 end
 
 ならば /^第(\d+)回の勉強会の情報が表示されている$/ do |n|
