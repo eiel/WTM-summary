@@ -2,4 +2,8 @@
 - if presentations = @event.presentations
   - presentations.each do |presentation|
     %ul
-      %li #{presentation.title} - #{presentation.speaker}
+      %li
+        %dl
+          %dt #{presentation.title}
+          - speaker = presentation.speaker
+          %dd= link_to "#{speaker.name} さん", speaker

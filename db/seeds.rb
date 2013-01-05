@@ -8,3 +8,4 @@
 
 Fabricate :event_52
 Fabricate :event_51
+Fabricate :event_50
