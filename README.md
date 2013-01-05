@@ -16,6 +16,11 @@ Wtm Summary
   - 実際に動かしてみて足りない部分のシナリオを記述していきます
 - データを作成するには [Fabiracation](https://github.com/paulelliott/fabrication)を使ってみます。
 
+## link_to の href の生成
+
+link_to event で 使用される xxx_path をオーバライドすればよい
+この場合 event_path Helperを実装した
+
 ## 謝辞
 
 このアプリケーションは Rails Apps Composer で生成しました。

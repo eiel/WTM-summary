@@ -15,4 +15,10 @@ describe ApplicationHelper do
       it { should eq('2012-10-21(日) 14:00〜17:30') }
     end
   end
+
+  describe '#event_path' do
+    subject { event_path event }
+    let(:event) { Fabricate :event_52 }
+    it { should eq('events/2012/12') }
+  end
 end

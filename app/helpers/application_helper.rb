@@ -14,4 +14,8 @@ module ApplicationHelper
     end_time = end_at.strftime(time_format)
     "#{date}(#{wday}) #{start}〜#{end_time}"
   end
+
+  def event_path(event)
+    "events/#{event.year}/#{event.month}"
+  end
 end
