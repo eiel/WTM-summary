@@ -54,3 +54,4 @@ gem "simple_form", ">= 2.0.4"
 gem "figaro", ">= 0.5.0"
 gem "better_errors", ">= 0.3.2", :group => :development
 gem "binding_of_caller", ">= 0.6.8", :group => :development
+gem "pry-rails", group: [:development, :test]
