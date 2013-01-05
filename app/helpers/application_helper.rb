@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
 
 module ApplicationHelper
+  WDAYS = %W|日 月 火 水 木 金 土|
+
   def event_term(event)
-    case event.number
-    when 52
-      '2012-12-22(土) 18:00～21:00'
-    when 51
-      '2012-10-21(日) 14:00～17:30'
-    else
-      raise 'ちゃんと実装してないよ'
-    end
+    start_at = event.start_at
+    end_at = event.end_at
+
+    date = start_at.strftime("%Y-%m-%d")
+    wday = WDAYS[start_at.wday]
+    time_format = "%H:%M"
+    start = start_at.strftime(time_format)
+    end_time = end_at.strftime(time_format)
+    "#{date}(#{wday}) #{start}〜#{end_time}"
   end
 end
