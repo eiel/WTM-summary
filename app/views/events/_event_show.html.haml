@@ -1,0 +1,5 @@
+%h1 第#{@event.number}回「WEB TOUCH MEETING」
+- if presentations = @event.presentations
+  - presentations.each do |presentation|
+    %ul
+      %li #{presentation.title} - #{presentation.speaker}

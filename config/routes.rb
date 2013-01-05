@@ -1,6 +1,10 @@
 WTMSummary::Application.routes.draw do
   root :to => "home#index"
-  resources :events
+  resources :events, only: :index do
+    collection do
+      get ':year/:month', to: :show
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
