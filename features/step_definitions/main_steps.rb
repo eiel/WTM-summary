@@ -5,11 +5,11 @@
   case n
   when 52
     event = Event.create( number: 52 )
-    event.presentation_create( title: 'Webに活かす映像制作術',
+    event.presentations.create( title: 'Webに活かす映像制作術',
                                speaker: 'INDeVisual 浅野')
-    event.presentation_create( title: 'あなたのつくったWEBサイト、生きてますか？',
+    event.presentations.create( title: 'あなたのつくったWEBサイト、生きてますか？',
                                speaker: '大林')
-    event.presentation_create( title: '自由過ぎるCMS、concrete5を上手く使うためのお作法',
+    event.presentations.create( title: '自由過ぎるCMS、concrete5を上手く使うためのお作法',
                                speaker: 'コンクリートファイブ ジャパン株式会社 佐々木多生')
   when 51
     event = Event.create( number: 51 )
