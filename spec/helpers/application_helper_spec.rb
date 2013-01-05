@@ -11,7 +11,7 @@ describe ApplicationHelper do
     end
 
     context '第51回のイベントの時' do
-      let(:event) { Fabricate :event, number: 51 }
+      let(:event) { Fabricate :event_51 }
       it { should eq('2012-10-21(日) 14:00〜17:30') }
     end
   end
