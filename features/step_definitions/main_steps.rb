@@ -6,7 +6,7 @@
   when 52
     Fabricate :event_52
   when 51
-    event = Event.create( number: 51 )
+    Fabricate :event_51
   else
     raise 'そんなデータないっす'
   end

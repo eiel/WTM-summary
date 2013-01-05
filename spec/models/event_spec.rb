@@ -24,4 +24,17 @@ describe Event do
       it { expect(subject.first.number).to eq(4) }
     end
   end
+
+  describe '.find(year, month)' do
+    subject { Event.find(year, month) }
+    before :each do
+      Fabricate :event_52
+    end
+
+    context 'year: 2012, month: 12' do
+      let(:year) { '2012' }
+      let(:month) { '12' }
+      its(:number) { should eq(52) }
+    end
+  end
 end

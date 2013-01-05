@@ -4,6 +4,6 @@ class EventsController < ApplicationController
   end
 
   def show
-    @event = Event.first
+    @event = Event.find(params[:year], params[:month])
   end
 end
