@@ -20,4 +20,12 @@ class Event < ActiveRecord::Base
       order(:number).reverse_order
     end
   end
+
+  def year
+    start_at.year
+  end
+
+  def month
+    start_at.month
+  end
 end
