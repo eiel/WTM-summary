@@ -5,7 +5,7 @@ Wtm Summary
 
 このプロジェクトは、[Hiroshima.rb](http://hiroshimarb.github.com) の活動ひとつとして USTREAM を使い Rails アプリケーションのライブコーディングに使用したアプリケーションです。
 
-Web touch meeting のまとめサイトを勝手に作ってみよう。という流れです。
+[Web touch meeting](http://www.webtouchmeeting.com) のまとめサイトを勝手に作ってみよう。という流れです。
 
 ## 謝辞
 
