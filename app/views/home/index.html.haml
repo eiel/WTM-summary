@@ -1,5 +1,5 @@
-%h1 第52回「WEB TOUCH MEETING」
-%ul
-  %li Webに活かす映像制作術 - INDeVisual 浅野さん
-  %li あなたのつくったWEBサイト、生きてますか？ - 大林さん
-  %li 自由過ぎるCMS、concrete5を上手く使うためのお作法』- コンクリートファイブ ジャパン株式会社 佐々木多生さん
+%h1 第#{@event.number}回「WEB TOUCH MEETING」
+- if presentations = @event.presentations
+  - presentations.each do |presentation|
+    %ul
+      %li #{presentation.title} - #{presentation.speaker}
