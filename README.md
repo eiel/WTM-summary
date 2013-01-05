@@ -9,8 +9,10 @@ Wtm Summary
 
 ## 概要
 
-- Rails Apps Composer を使ってプロジェクトの作成
-- Cucumber を使用してインテグレーションテストから記述する
+- [Rails Apps Composer](http://railsapps.github.com/rails-composer/) を使ってプロジェクトの作成
+- [Cucumber](http://cukes.info) を使用してインテグレーションテストから記述する
+  - あったらいいなー、というメソッド適当にかいて、適当に実装していく
+  - ブラウザの操作をかく場合は [capybara](https://github.com/jnicklas/capybara) の命令を使うよ
 
 ## 謝辞
 
