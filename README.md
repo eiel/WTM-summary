@@ -13,6 +13,7 @@ Wtm Summary
 - [Cucumber](http://cukes.info) を使用してインテグレーションテストから記述する
   - あったらいいなー、というメソッド適当にかいて、適当に実装していく
   - ブラウザの操作をかく場合は [capybara](https://github.com/jnicklas/capybara) の命令を使うよ
+  - 実際に動かしてみて足りない部分のシナリオを記述していきます
 
 ## 謝辞
 
