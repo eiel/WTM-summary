@@ -14,6 +14,7 @@ Wtm Summary
   - あったらいいなー、というメソッド適当にかいて、適当に実装していく
   - ブラウザの操作をかく場合は [capybara](https://github.com/jnicklas/capybara) の命令を使うよ
   - 実際に動かしてみて足りない部分のシナリオを記述していきます
+- データを作成するには [Fabiracation](https://github.com/paulelliott/fabrication)を使ってみます。
 
 ## 謝辞
 
