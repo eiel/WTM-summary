@@ -26,7 +26,8 @@ end
 end
 
 ならば /^過去のイベント情報が表示される$/ do
-  pending # express the regexp above with the code you wish you had
+  expect( page ).to have_content('第52回 2012-12-22(土) 18:00～21:00')
+  expect( page ).to have_content('第51回 2012-10-21(日) 14:00～17:30')
 end
 
 ならば /^第(\d+)回の勉強会の情報が表示されている$/ do |n|
