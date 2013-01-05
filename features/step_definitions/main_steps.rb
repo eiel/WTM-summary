@@ -33,7 +33,7 @@ end
     expect( page ).to have_content('あなたのつくったWEBサイト、生きてますか？')
     expect( page ).to have_content('大林')
     expect( page ).to have_content('自由過ぎるCMS、concrete5を上手く使うためのお作法')
-    expect( page ).to have_content('コンクリートファイブ ジャパン株式会社 佐々木多生')
+    expect( page ).to have_content('コンクリートファイブ ジャパン株式会社')
   when 51
     expect( page ).to have_content('第51回「WEB TOUCH MEETING」')
   else
@@ -43,4 +43,8 @@ end
 
 ならば /^ひむらさんの詳細情報が表示される$/ do
   expect( page ).to have_css('.name', text: "ひむら ともひこ")
+end
+
+ならば /^西村さんの詳細情報が表示される$/ do
+  expect( page ).to have_css('.name', text: "西村 誠")
 end
