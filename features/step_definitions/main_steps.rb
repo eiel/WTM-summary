@@ -15,7 +15,11 @@ end
 end
 
 もし /^"(.*?)"をクリックする$/ do |name|
-  click_link name
+  click_on name
+end
+
+もし /^スピーカの情報を入力$/ do
+  fill_in '名前', with: 'ひむひむ'
 end
 
 ならば /^過去のイベント情報が表示される$/ do
@@ -47,4 +51,8 @@ end
 
 ならば /^西村さんの詳細情報が表示される$/ do
   expect( page ).to have_css('.name', text: "西村 誠")
+end
+
+ならば /^スピーカの詳細情報が表示される$/ do
+  expect( page ).to have_content('ひむひむ')
 end
