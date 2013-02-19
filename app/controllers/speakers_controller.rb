@@ -1,7 +1,12 @@
 class SpeakersController < ApplicationController
 
   def new
-    @speaker = Speaker.new
+    authenticate_user!
+    if current_user.admin?
+      @speaker = Speaker.new
+    else
+      redirect_to :index
+    end
   end
 
   def create

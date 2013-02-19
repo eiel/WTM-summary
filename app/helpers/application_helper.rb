@@ -18,4 +18,8 @@ module ApplicationHelper
   def event_path(event)
     "events/#{event.year}/#{event.month}"
   end
+
+  def omniauth_authorize_path(resouruce_name, provider)
+    "/users/auth/#{provider}"
+  end
 end

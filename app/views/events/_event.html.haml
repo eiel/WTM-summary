@@ -1,2 +1,3 @@
-.event
-  = link_to "第#{event.number}回 #{event_term event}", event
+- if event
+  .event
+    = link_to "第#{event.number}回 #{event_term event}", event

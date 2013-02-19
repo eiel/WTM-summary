@@ -22,6 +22,20 @@ end
   fill_in '名前', with: 'ひむひむ'
 end
 
+前提 /^管理者でログインしている$/ do
+  email = 'testing@man.net'
+  password = 'secretpass'
+  User.create!(email: email,
+               password: password,
+               password_confirmation: password,
+               twitter_uid: User.admin_uids.first)
+
+  visit '/users/sign_in'
+  fill_in "user_email", :with => email
+  fill_in "user_password", :with => password
+  click_button "Sign in"
+end
+
 ならば /^過去のイベント情報が表示される$/ do
   expect( page ).to have_content('第52回 2012-12-22(土) 18:00〜21:00')
   expect( page ).to have_content('第51回 2012-10-21(日) 14:00〜17:30')
