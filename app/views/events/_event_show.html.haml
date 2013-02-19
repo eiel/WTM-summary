@@ -1,9 +1,10 @@
-%h1 第#{@event.number}回「WEB TOUCH MEETING」
-- if presentations = @event.presentations
-  - presentations.each do |presentation|
-    %ul
-      %li
-        %dl
-          %dt #{presentation.title}
-          - speaker = presentation.speaker
-          %dd= link_to "#{speaker.name} さん", speaker
+- if event
+  %h1 第#{@event.number}回「WEB TOUCH MEETING」
+  - if presentations = @event.presentations
+    - presentations.each do |presentation|
+      %ul
+        %li
+          %dl
+            %dt #{presentation.title}
+            - speaker = presentation.speaker
+            %dd= link_to "#{speaker.name} さん", speaker
