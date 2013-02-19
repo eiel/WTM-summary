@@ -1,0 +1,5 @@
+%h2 新規スピーカ登録
+
+= simple_form_for @speaker do |f|
+  = f.input :last_name, label: '名前'
+  = f.button :submit, '登録する', class: [:'btn-primary']
