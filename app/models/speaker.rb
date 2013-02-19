@@ -1,9 +1,5 @@
 class Speaker < ActiveRecord::Base
-  attr_accessible :first_name, :last_name
+  attr_accessible :name
 
   has_many :presentation
-
-  def name
-    [last_name, first_name].join(' ')
-  end
 end
